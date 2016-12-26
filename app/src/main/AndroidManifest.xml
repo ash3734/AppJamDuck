@@ -3,13 +3,13 @@
     package="com.example.ash.sopt19th_mate">
 
     <application
+        android:name=".application.ApplicationController"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
-        </activity>
+        <activity android:name=".MainActivity"></activity>
         <activity android:name=".SplashActivity" />
         <activity
             android:name=".HomeActivity"
@@ -21,6 +21,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".detail.DetailActivity"></activity>
     </application>
 
 </manifest>
