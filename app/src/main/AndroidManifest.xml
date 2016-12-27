@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.ash.sopt19th_mate">
-
+    <uses-permission android:name="android.permission.INTERNET"/>
     <application
-        android:name=".application.ApplicationController"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"></activity>
-        <activity android:name=".SplashActivity" />
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+
+        <activity android:name=".login.SplashActivity" />
         <activity
-            android:name=".HomeActivity"
+            android:name=".login.MainActivity"
             android:label="@string/title_activity_home"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -22,6 +22,18 @@
             </intent-filter>
         </activity>
         <activity android:name=".detail.DetailActivity"></activity>
+        <activity android:name="com.facebook.FacebookActivity"
+            android:configChanges=
+                "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:label="@string/app_name" />
+        <activity android:name=".mypage.MyPageMainActivity" />
+        <activity android:name=".setsinger.SetSingerActivity" />
+        <activity android:name=".setsinger.ViewHolderActivity" />
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".dialog.CustomDialogActivity"></activity>
+
+
     </application>
 
 </manifest>
