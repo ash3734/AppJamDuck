@@ -15,7 +15,7 @@ public class ApplicationController extends Application {
     private static ApplicationController instance;
 
     private NetworkService networkService;
-    private String baseUrl="aaaa";
+    private String baseUrl="";
 
     public NetworkService getNetworkService(){
         return networkService;
