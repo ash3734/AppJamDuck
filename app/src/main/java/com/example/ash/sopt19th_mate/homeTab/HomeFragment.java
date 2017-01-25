@@ -12,7 +12,7 @@ import android.view.ViewGroup;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.RequestManager;
 import com.example.ash.sopt19th_mate.R;
-import com.example.ash.sopt19th_mate.detail.DetailActivity;
+import com.example.ash.sopt19th_mate.board.detail.DetailActivity;
 
 import java.util.ArrayList;
 

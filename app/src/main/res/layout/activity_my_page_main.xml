@@ -1,47 +1,117 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/activity_my_page_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingTop="5dp"
-    android:paddingLeft="10dp"
-    android:paddingBottom="5dp"
-    android:layout_marginTop="1dp"
     android:orientation="vertical">
-
-    <Button
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/set_singer"
-        android:text="내 설정"/>
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/set_singer"
-        android:gravity="center_horizontal"
-        android:layout_gravity="center">
-        <ImageView
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:src="@drawable/login_logo"
-            android:layout_gravity="center"
-            android:id="@+id/user_id"
-            />
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp">
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/button3"
-            android:layout_alignBottom="@+id/user_id"
-            android:layout_alignRight="@+id/user_id"
-            android:layout_alignEnd="@+id/user_id" />
-    </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/main_topbar"
+                    android:id="@+id/mypageMain_BarImage_Id"/>
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/back"
+                    android:id="@+id/mypageMain_Back_ImageView_Id"/>
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/check"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/mypageMain_Next_ImageView_Id"/>
+                <TextView
+                    android:layout_width="210dp"
+                    android:layout_height="48dp"
+                    android:text="내 설정"
+                    android:gravity="center"
+                    android:textColor="#FFF"
+                    android:textSize="16dp"
+                    android:layout_centerHorizontal="true"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="닉네임"
-        android:layout_gravity="center"
-        android:id="@+id/textView3" />
+            </RelativeLayout>
+
+        </android.support.design.widget.AppBarLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/mypagemain_background_ImageView_Id" />
+
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:layout_width="151dp"
+                android:layout_height="151dp"
+                android:layout_marginTop="100dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/imageView1"
+                android:src="@drawable/profile_default"
+                app:civ_border="true"
+                app:civ_border_color="#ff7d8f"
+                />
+
+
+            <ImageButton
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:id="@+id/addImgBtn"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/profilesetting_photo"
+                android:layout_marginTop="216dp"
+                android:layout_marginRight="102dp"
+                />
+
+            <LinearLayout
+                android:layout_width="160dp"
+                android:layout_height="30dp"
+                android:background="@drawable/border_circle_background"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/imageView1"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="30dp" />
+                <EditText
+                    android:layout_width="125dp"
+                    android:layout_height="match_parent"
+                    android:hint="닉네임"
+                    android:textSize="15dp"
+                    android:textColorHint="#9d9e9e"
+                    android:id="@+id/nickname"
+                    android:gravity="center"
+                    android:background="@null"/>
+
+            </LinearLayout>
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Logout"
+                android:text="logout"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
 
 </LinearLayout>

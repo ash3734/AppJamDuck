@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--메인 페이지-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFFFFF">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <FrameLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_height"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/main_imageview_bg"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                />
+            <ImageView
+                android:id="@+id/main_imageview_main"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                />
+            <TextView
+                android:id="@+id/main_textview_singer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="가수이름"
+                android:textColor="#FFFFFF"
+                android:layout_below="@id/main_imageview_main" />
+        </RelativeLayout>
+
+        <com.example.ash.sopt19th_mate.astuetz.PagerSlidingTabStrip
+            android:id="@+id/tabs"
+            app:pstsShouldExpand="true"
+            android:layout_width="match_parent"
+            android:layout_height="48dip"
+            android:layout_gravity="bottom"
+            android:background="#0072C6" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_gravity="bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:textColor="#FF0000"
+        android:gravity="center"
+        />
+</FrameLayout>

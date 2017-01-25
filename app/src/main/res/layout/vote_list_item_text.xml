@@ -1,0 +1,11 @@
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/votefragment_textview_vote"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:gravity="center_vertical"
+    android:minHeight="62dp"
+    android:textColor="#5D5F5E"
+    android:paddingLeft="17dp"
+    android:textSize="15dp"
+    android:background="#F5F5F5"
+    />

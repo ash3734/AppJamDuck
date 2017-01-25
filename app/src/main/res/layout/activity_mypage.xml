@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_mypage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ash.sopt19th_mate.mypage.MypageActivity"
+    android:orientation="vertical"
+    android:background="#f2f2f2">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" 
+                android:id="@+id/mypage_SetSinger_Topbar"/>
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/back"
+                android:id="@+id/mypage_BackImage_Id"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="가수추가"
+                android:textColor="#FFF"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+    </android.support.design.widget.AppBarLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginLeft="35dp"
+    android:layout_marginRight="35dp">
+
+    <RelativeLayout
+        android:layout_width="305dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="24dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/image_border">
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/find"/>
+            <EditText
+                android:layout_width="240dp"
+                android:layout_height="35dp"
+                android:hint="좋아하는 가수를 검색해보세요"
+                android:textSize="14dp"
+                android:gravity="center_vertical"
+                android:id="@+id/search2"
+                android:background="@null"
+                android:layout_centerInParent="true"/>
+        </LinearLayout>
+    </RelativeLayout>
+<TextView
+    android:layout_width="110dp"
+    android:layout_height="35dp"
+    android:layout_marginTop="10dp"
+    android:text="검색결과"
+    android:gravity="center_vertical"
+    android:textSize="15dp"
+    android:textColor="#5d5f5e"/>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recycle">
+    </android.support.v7.widget.RecyclerView>
+
+
+</LinearLayout>
+
+</LinearLayout>

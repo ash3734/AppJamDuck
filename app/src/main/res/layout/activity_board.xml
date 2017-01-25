@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.ash.sopt19th_mate.board.BoardActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/main_topbar"
+        app:titleTextColor="#FFF">
+
+        <!--<ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/back"/>-->
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:text="게시판"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+        <ImageView
+            android:id="@+id/boad_imageview_singer_img"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="fitXY"
+            android:tint="@color/colorPrimaryDark"/>
+        <TextView
+            android:id="@+id/boad_textview_singer_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="27dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="20dp"
+            android:textColor="#FFFFFF"
+            android:layout_alignParentBottom="true"
+
+            />
+
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dip"
+        android:layout_gravity="center"
+        android:background="#FF7D8F" />
+    <TextView
+        android:id="@+id/boad_texview_regiseter"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:textColor="#FF7D8F"
+        android:text="게시물 작성하러 가기"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dip"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:background="#FF7D8F" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/boad_recyclerview"
+        android:layout_marginTop="5dp"
+        android:layout_weight="7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+    <!--
+    <RelativeLayout
+        android:id="@+id/boad_linearlayout_input"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="게시글을 입력하세요"
+            />
+        <Button
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="입력"
+            />
+    </RelativeLayout>-->
+</LinearLayout>

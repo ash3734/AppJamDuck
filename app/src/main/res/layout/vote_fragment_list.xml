@@ -1,0 +1,9 @@
+<ListView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/votefragment_listView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:divider="#C9CACA"
+    android:dividerHeight="1px"
+    android:background="#F5F5F5"
+    android:scrollbars="none" />
+    <!-- 건들필요엇음-->

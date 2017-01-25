@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--다이얼로그 감싸는 부분-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="500dip"
+    android:background="@android:color/transparent"
+    tools:context=".newsstand.voteTab.DialogActivity">
+
+    <com.dev.sacot41.scviewpager.SCViewPager
+        android:id="@+id/viewpager_main_activity"
+        android:layout_centerInParent="true"
+        android:layout_width="300dip"
+        android:layout_height="400dip">
+
+    </com.dev.sacot41.scviewpager.SCViewPager>
+
+
+    <com.dev.sacot41.scviewpager.DotsView
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/dotsview_main"
+        />
+</RelativeLayout>
