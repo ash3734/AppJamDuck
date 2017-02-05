@@ -23,7 +23,7 @@ public class AndroidTwitterExampleInit extends AppCompatActivity {
 
         TwitterAuthConfig authConfig = new TwitterAuthConfig(TWITTER_KEY, TWITTER_SECRET);
         Fabric.with(this, new Twitter(authConfig));
-
+        //start
         startLoginActivity();
     }
 //TODO : sket8993@naver.com
